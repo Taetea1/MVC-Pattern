@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <h1>칼로리가 600이상 음식 페이지</h1>
+  <br />
+  <% foods.forEach(food=>{ %>
+    <h1>
+      <%= food.name %>
+    </h1>
+    <p>
+      카테고리: <%= food.category %>
+    </p>
+    <p>
+      가격: <%= food.price %>
+    </p>
+    <p>
+      칼로리: <%= food.calories %>
+    </p>
+    <% }) %>
+
+
+      <a href="/foods">뒤로가기</a>
+</body>
+
+</html>

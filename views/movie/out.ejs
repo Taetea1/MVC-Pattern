@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <h1>외국 작품 페이지</h1>
+  <br />
+  <% movies.forEach(movie=>{ %>
+    <h1>
+      <%= movie.title %>
+    </h1>
+    <p>
+      장르: <%= movie.genre %>
+    </p>
+    <p>
+      감독: <%= movie.director %>
+    </p>
+    <p>
+      연도: <%= movie.releaseYear %>
+    </p>
+    <p>
+      나라: <%= movie.from %>
+    </p>
+    <% }) %>
+
+
+      <a href="/movies">뒤로가기</a>
+</body>
+
+</html>

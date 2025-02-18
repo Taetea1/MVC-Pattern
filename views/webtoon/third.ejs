@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <h1>30살 이상인 작가의 작품 페이지</h1>
+  <br />
+  <% webtoon.forEach(webtoon=>{ %>
+    <h1>
+      <%= webtoon.title %>
+    </h1>
+    <p>
+      장르: <%= webtoon.genre %>
+    </p>
+    <p>
+      작가: <%= webtoon.author %>
+    </p>
+    <p>
+      성별: <%= webtoon.gender %>
+    </p>
+    <p>
+      나이: <%= webtoon.age %>
+    </p>
+    <% }) %>
+
+
+      <a href="/webtoons">뒤로가기</a>
+</body>
+
+</html>

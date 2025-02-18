@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="/public/css/global.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <h1>23살 이상인 학생 페이지</h1>
+  <br />
+  <table>
+    <tr>
+      <th>이름</th>
+      <th>나이</th>
+      <th>학과</th>
+      <th>성적</th>
+    </tr>
+    <% students.forEach(stu=>{ %>
+      <tr>
+        <td>
+          <%= stu.name %>
+        </td>
+        <td>
+          <%= stu.age %>
+        </td>
+        <td>
+          <%= stu.major %>
+        </td>
+
+        <td>
+          <%= stu.grade %>
+        </td>
+      </tr>
+      <% }) %>
+  </table>
+  <br />
+  <a href="/students">뒤로가기</a>
+</body>
+
+</html>

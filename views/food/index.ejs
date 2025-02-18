@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <h1>음식 리스트</h1>
+  <ul>
+    <% foods.forEach(fod=>{ %>
+      <li>
+        <a href="/foods/fod/<%= fod.id %>">
+          <%= fod.name %>
+        </a>
+      </li>
+      <% }) %>
+  </ul>
+  <a href="/foods/fast">패스트푸드 음식</a><br>
+  <a href="/foods/price">5000원 이상 음식</a><br>
+  <a href="/foods/calo">칼로리가 600이상</a><br>
+  <br>
+  <a href="/">뒤로가기</a>
+</body>
+
+</html>

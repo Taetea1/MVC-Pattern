@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="/public/css/global.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <h1>800000원 이상인 제품 페이지</h1>
+  <br />
+  <table>
+    <tr>
+      <th>제품명</th>
+      <th>가격</th>
+      <th>브랜드</th>
+      <th>카테고리</th>
+    </tr>
+    <% elecs.forEach(elec=>{ %>
+
+      <tr>
+        <td>
+          <%= elec.name %>
+        </td>
+        <td>
+          <%= elec.price %>
+        </td>
+        <td>
+          <%= elec.brand %>
+        </td>
+        <td>
+          <%= elec.category %>
+        </td>
+      </tr>
+
+      <% }) %>
+  </table>
+  <br>
+  <a href="/elecs">뒤로가기</a>
+</body>
+
+</html>

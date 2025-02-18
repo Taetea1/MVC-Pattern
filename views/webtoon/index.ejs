@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <h1>웹툰 리스트</h1>
+  <ul>
+    <% webtoons.forEach(web=>{ %>
+      <li>
+        <a href="/webtoons/web/<%= web.id %>">
+          <%= web.title %>
+        </a>
+      </li>
+      <% }) %>
+  </ul>
+  <a href="/webtoons/man">남자 작가 작품 보러가기</a><br>
+  <a href="/webtoons/third">30살 이상인 작가 작품 보러가기</a><br>
+  <a href="/webtoons/genre">장르가 로맨스인 웹툰 보러가기</a><br>
+  <br>
+  <a href="/">뒤로가기</a>
+</body>
+
+</html>

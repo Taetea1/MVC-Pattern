@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <h1>학생 리스트</h1>
+  <ul>
+    <% students.forEach(stu=>{ %>
+      <li>
+        <a href="/students/stu/<%= stu.id %>">
+          <%= stu.name %>
+        </a>
+      </li>
+      <% }) %>
+  </ul>
+  <a href="/students/astudent">A이상인 학생 보러가기</a><br>
+  <a href="/students/older">23살 이상인 학생 보러가기</a><br>
+  <a href="/students/computer">컴퓨터공학인 학생 보러가기</a><br>
+  <br>
+  <a href="/">뒤로가기</a>
+</body>
+
+</html>

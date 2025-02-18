@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <h1>영화 리스트</h1>
+  <ul>
+    <% movies.forEach(mov=>{ %>
+      <li>
+        <a href="/movies/mov/<%= mov.id %>">
+          <%= mov.title %>
+        </a>
+      </li>
+      <% }) %>
+  </ul>
+  <a href="/movies/out">외국 작품 보러가기</a><br>
+  <a href="/movies/year">2000년대 이후 작품 보러가기</a><br>
+  <a href="/movies/genre">장르가 로맨스인 웹툰 보러가기</a><br>
+  <br>
+  <a href="/">뒤로가기</a>
+</body>
+
+</html>

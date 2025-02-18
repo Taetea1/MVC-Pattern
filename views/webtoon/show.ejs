@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <h1>해당하는 웹툰 페이지</h1>
+  <br />
+  <h1>
+    <%= authora.title %>
+  </h1>
+  <p>
+    장르: <%= authora.genre %>
+  </p>
+  <p>
+    작가: <%= authora.author %>
+  </p>
+  <p>
+    성별: <%= authora.gender %>
+  </p>
+  <p>
+    나이: <%= authora.age %>
+  </p>
+
+  <a href="/webtoons">뒤로가기</a>
+</body>
+
+</html>
