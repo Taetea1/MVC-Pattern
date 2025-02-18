@@ -1,3 +1,4 @@
+// 라우터는 app.js에서 하던 get요청
 const express = require("express");
 const router = express.Router();
 

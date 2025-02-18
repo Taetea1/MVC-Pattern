@@ -85,4 +85,5 @@ const getRomance = () => {
   return genre;
 };
 
+// 사용해주기 위해 내보냄
 module.exports = { getAllWebtoons, getwById, getMan, getAge, getRomance };
